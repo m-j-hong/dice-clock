@@ -125,7 +125,6 @@ function updateDice() {
     // inset shadows
     for (const c of colonDots) {
         c.style.boxShadow =  insetShadow
-        c.style.background = themeColor
     }
     for (const d of diceDots) {
         d.style.boxShadow =  insetShadow
