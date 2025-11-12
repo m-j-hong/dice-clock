@@ -86,7 +86,7 @@ function updateDice() {
         shadowX = (6 - (hours % 6)) * 5
         shadowY = -(hours % 6) * 5
     }
-    let insetShadow = shadowX/10 + 'px ' + shadowY/10 + 'px 0 0 #00000080 inset';
+    let insetShadow = shadowX/5 + 'px ' + shadowY/5 + 'px 0 0 #00000080 inset';
     let dieShadow = shadowX + 'px ' + shadowY + 'px 0 0 #00000080';
 
 
