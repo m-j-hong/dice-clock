@@ -70,7 +70,9 @@ mCountC = Math.ceil((minutes % 10) / 2)
 
 function updateDice() {
     // light/dark theme
-    (hours < 6 || hours >= 14) ? document.body.style.background = '#28232f' : document.body.style.background = '#f8f7f6'
+    let themeColor
+    (hours < 6 || hours >= 14) ? themeColor = '#28232f' : themeColor = '#f8f7f6'
+    document.body.style.background = themeColor
     
     // shadows
     // 0 - 24, negative from 24 to 12, positive from 12 to 24. maximum at 6 and 18
@@ -111,16 +113,19 @@ function updateDice() {
         if (d.innerHTML == numbers[0]) {
             // if # is 0, looks like die isn't there
             d.style.boxShadow =  insetShadow
+            d.style.background = themeColor
         }
         else {
             // regular positive shadow
             d.style.boxShadow =  dieShadow
+            d.style.background = '#f8f7f6'
         }
     }
 
     // inset shadows
     for (const c of colonDots) {
         c.style.boxShadow =  insetShadow
+        c.style.background = themeColor
     }
     for (const d of diceDots) {
         d.style.boxShadow =  insetShadow
