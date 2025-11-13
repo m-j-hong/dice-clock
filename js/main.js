@@ -71,7 +71,7 @@ function updateDice() {
 
     // light/dark theme
     let themeColor
-    (hours < 6 || hours >= 14) ? themeColor = '#28232f' : themeColor = '#f8f7f6'
+    (hours < 6 || hours >= 18) ? themeColor = '#28232f' : themeColor = '#f8f7f6'
     document.body.style.background = themeColor
     
     // shadows: 0 - 24, negative from 24 to 12, positive from 12 to 24. maximum at 6 and 18
