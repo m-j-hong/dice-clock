@@ -56,7 +56,7 @@ function updateDice() {
 
     // set 24 hour scale to 12
     // 0 means 12, otherwise regular
-    let h12 = (hours == 0) ? 12 : hours % 12
+    let h12 = (hours == 0 || hours == 12) ? 12 : hours % 12
 
     // split hours equally among 2 dice
     hCountA = h12 - Math.ceil(h12 / 2)
